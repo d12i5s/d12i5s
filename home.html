@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaded Bracelets</title>
+    <link rel="icon" href="./icon/logo-bb.png">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+    <link rel="stylesheet" href="card.css" type="text/css">
+    <link rel="stylesheet" href="footer.css" type="text/css">
+    
+    <style>
+        .display {
+            text-align: center; 
+            color: pink; 
+            font-family: Poppins, sans-serif;
+            margin:20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="parallax">
+        <header class="primary-header">
+            <div class="wrapper_nav">
+
+                <div id="logo">
+                    <img src="./icon/logo-bb.png" alt="Logo" class="logo-img">
+                </div>
+                
+
+                <nav class="primary-nav">
+                    <div class="horizontal-nav">
+                        <a href="#about">About</a>
+                        <a href="#barang">Product</a>
+                        <a href="#bukutamu">Pesan !</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="hero">
+            <div class="wrapper">
+                <h3 class="hero_title">
+                    Pakai Gelang kami, <br> biar tanganmu tidak
+                </h3>
+                <h1>KESEPIAN :)</h1>
+                <button class="button"><a class="button-link" href="#barang">Lihat Product</a></button>
+            </div>
+        </div>
+        
+        <img class="parallax_background" src=".\images\background_parallax.png">
+        <img class="parallax_mochi" src=".\images\mochi.png">
+        <img class="parallax_abu" src=".\images\abu_belakang.png">
+        <img class="parallax_coklat" src=".\images\coklat_depan.png">
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="taglineproduk">
+        <h2 class="judulproduk" id="barang">Produk Kami</h2>
+        <p class="deskripsi" >Beaded Bracelets, Ini adalah produk gelang manik-manik kami. Silakan pakai untuk menambahkan sentuhan elegan pada gaya Anda, sebagai aksesoris sehari-hari, atau hadiah istimewa bagi orang yang Anda cintai.  </p>
+    </div>
+
+    <main class="main-content">
+        <div class="wrappercontent">
+            <div class="container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>Gelang 1</h4>
+                            <h6>12.345</h6>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>Gelang 2</h4>
+                            <h6>Rp 15.000</h6>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3" >
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>Gelang 3</h4>
+                            <h6>12.345</h6>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4" >
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h4>Gelang 4</h4>
+                            <h6>12.345</h6>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c5" >
+                <label for="c5" class="card">
+                    <div class="row">
+                        <div class="icon">5</div>
+                        <div class="description">
+                            <h4>Gelang 5</h4>
+                            <h6>12.345</h6>
+                        </div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c6" >
+                <label for="c6" class="card">
+                    <div class="row">
+                        <div class="icon">6</div>
+                        <div class="description">
+                            <h4>Gelang 6</h4>
+                            <h6>12.345</h6>
+                        </div>
+                    </div>
+                </label>
+            </div><br>
+            
+
+        </div>
+</main>
+
+
+            <div>
+                <div ><img src="./images/FOUNDER-01.png" id="about"></div>
+            </div>
+            
+            <div class="bukutamu" id="bukutamu">
+                <form id="formpengguna">
+                    <h1 class="pengguna">Form Pemesanan</h1>
+        
+                    <label>Nama     : </label> <br>
+                    <input name="vnama" type="text" name="nama" id="nama" required>
+                        <br>
+                    <label>Jenis Gelang Yang ingin Dibeli    : </label> <br>
+                    <input name="vjgelang" type="text" name="hp" id="jgelang" required>
+                    <br>
+                    <label>Alamat Lengkap : </label> <br>
+                    <input name="valamat" type="text" name="pos" id="alamat" required>
+                    <br>
+                    <label>Catatan    : </label> <br>
+                    <input name="catatan" type="text" name="pesan" id="catatan" required>
+                    <br>
+                    <button id="buttonform" type="submit" onclick="sendwhatsapp();">Submit</button>
+                </form>
+            </div>
+
+            <br><br><br><br>
+            <hr>
+
+            
+
+            <footer>
+                <div class="footercontent">
+                    <h3>Beaded Bracelets</h3><br>
+                    <ul class="social">
+                        <a href="https://wa.me/+6282137143962"><img src="./icon/outline-whatsapp (1).svg" width="40px"></a>
+                    <a href="https://www.instagram.com/woopsy.smg/"><img src="./icon/instagram-line.svg" width="40px"></a>
+                    </ul>
+                    <br>
+                </div>
+                <div class="footerbottom">
+                    <p>Copyright &copy;2024 Beadeb Bracelets designed by @klp 6 4K Technopreneur</p>
+                </div>
+                    
+            </footer>
+            <a href="#" class="back-to-top">
+                <span class="material-icons">UP!</span>
+            </a>
+
+            <script>
+                function sendwhatsapp() {
+            var phonenumber = "+6289612480603";
+    
+            var nama = document.querySelector("#nama").value;
+            var jgelang = document.querySelector("#jgelang").value;
+            var alamat = document.querySelector("#alamat").value;
+            var catatan = document.querySelector("#catatan").value;
+    
+            var url =
+            "https://wa.me/" +
+            phonenumber +
+            "?text=" +
+            "*Nama:* " +
+            encodeURIComponent(nama) +
+            "%0a" +
+            "*Jumlah Gelang:* " +
+            encodeURIComponent(jgelang) +
+            "%0a" +
+            "*Alamat:* " +
+            encodeURIComponent(alamat) +
+            "%0a" +
+            "*Catatan:* " +
+            encodeURIComponent(catatan) +
+            "%0a%0a";
+
+    
+            window.open(url, "_blank").focus();
+          }
+    
+            </script>
+</body>
+</html>
