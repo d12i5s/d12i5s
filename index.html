@@ -186,19 +186,20 @@
             </a>
 
             <script>
-                function sendwhatsapp() {
-            var phonenumber = "+6289612480603";
-    
-            var nama = document.querySelector("#nama").value;
-            var jgelang = document.querySelector("#jgelang").value;
-            var alamat = document.querySelector("#alamat").value;
-            var catatan = document.querySelector("#catatan").value;
-    
-            var url =
+function sendwhatsapp() {
+        var phonenumber = "+628961245678";
+        var nama = document.querySelector("#nama").value;
+        var jgelang = document.querySelector("#jgelang").value;
+        var alamat = document.querySelector("#alamat").value;
+        var catatan = document.querySelector("#catatan").value;
+
+        var kalimatAwal = "Assalamualaikum, saya ingin memesan gelang manik-maniknya, kak.%0a%0a";
+
+        var url =
             "https://wa.me/" +
             phonenumber +
-            +"?text=" +
-            "Assalamualaikum kak saya ingin membeli gelang manik manik" +
+            "?text=" +
+            encodeURIComponent(kalimatAwal) +
             "*Nama:* " +
             encodeURIComponent(nama) +
             "%0a" +
@@ -212,10 +213,7 @@
             encodeURIComponent(catatan) +
             "%0a%0a";
 
-    
-            window.open(url, "_blank").focus();
-          }
-    
+        window.open(url, "_blank").focus();
             </script>
 </body>
 </html>
